@@ -4,7 +4,7 @@ module.exports = {
   normalizeEntityName: function() {},
 
   beforeInstall: function() {
-    return this.addBowerPackageToProject('materialize', '0.97.7').then(function() {
+    return this.addBowerPackageToProject('materialize', 'git@github.com/g5search/g5-materialize-style-guide.git').then(function() {
       return this.addAddonsToProject({
         packages: [{
           name: 'ember-cli-sass',
